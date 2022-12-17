@@ -13,15 +13,28 @@ from AppEquipos.forms import SeleccionForm, DTForm, JugadorForm
 def inicio(request):
     return render (request, "AppEquipos/inicio.html")
 
-def dts(request):
-    return render (request, "AppEquipos/dts.html")
-
 def selecciones(request):
     return render (request, "AppEquipos/selecciones.html")
+
+def dts(request):
+    return render (request, "AppEquipos/dts.html")
 
 def jugadores(request):
     return render (request, "AppEquipos/jugadores.html")
 
+#views para leer los objetos de las clases. (?)Despues me va a servir para los for de las templates
+
+def leerSelecciones(request):
+    selecciones=Seleccion.objects.all()
+    return render(request, "AppEquipos/selecciones.html", {"selecciones":selecciones})
+
+def leerDts(request):
+    dts=DT.objects.all()
+    return(request, "AppEquipos/dts.html", {"dts":dts})
+
+def leerJugadores(request):
+    jugadores=Jugador.objects.all()
+    return render( request, "AppEquipos/jugadores.html", {"jugadores":jugadores })
 
 #views de las templates para agregar objetos de cada uno
 
