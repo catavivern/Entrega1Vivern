@@ -1,7 +1,10 @@
 para:   posicionarme sobre:     inicio: /AppEquipos/  
                                 selecciones: /AppEquipos/selecciones/
                                 dts: /AppEquipos/dts/   
-                                jugadores: /AppEquipos/jugadores/ 
+                                jugadores: /AppEquipos/jugadores/
+        ver: la lista de: selecciones: /AppEquipos/leerSelecciones/
+                          dts: /AppEquipos/leerDts/
+                          jugadores: /AppEquipos/leerJugadores/
         agregar: selecciones: /AppEquipos/seleccionFormulario/ 
         agregar: dts: /AppEquipos/dtFormulario/ 
         agregar: jugadores: /AppEquipos/jugadorFormulario/ 
