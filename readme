@@ -1,0 +1,9 @@
+para:   posicionarme sobre:     inicio: /AppEquipos/  
+                                selecciones: /AppEquipos/selecciones/
+                                dts: /AppEquipos/dts/   
+                                jugadores: /AppEquipos/jugadores/ 
+        agregar: selecciones: /AppEquipos/seleccionFormulario/ 
+        agregar: dts: /AppEquipos/dtFormulario/ 
+        agregar: jugadores: /AppEquipos/jugadorFormulario/ 
+        buscar: selecciones: /AppEquipos/busquedaSeleccion/
+  

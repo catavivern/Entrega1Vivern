@@ -1,0 +1,22 @@
+{% extends "AppEquipos/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">FORMULARIO DE SELECCIONES</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+<h3>{{ mensaje }}</h3>
+
+<form action="{% url 'buscar' %}" method="GET"> 
+
+    <input type="number" name="copasGanadas" id="copasGanadas" placeholder="INSERTE CANTIDAD DE COPAS GANADAS">
+
+    <input type="submit" value="buscar país">
+
+
+</form>
+
+{% endblock %}

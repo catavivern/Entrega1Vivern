@@ -1,0 +1,28 @@
+{% extends "AppEquipos/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">Cantidad de Mundiales ganados por las selecciones</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+{% if selecciones %}
+
+<h2>LISTADO DE SELECCIONES</h2>
+{% for seleccion in selecciones %}
+
+<h3>{{ seleccion.pais }} - {{ seleccion.copasGanadas }}</h3>
+
+{% endfor %}
+
+{% else %}
+
+<h2>NO HAY SELECCIONES</h2>
+
+{% endif %}
+
+
+
+{% endblock %}

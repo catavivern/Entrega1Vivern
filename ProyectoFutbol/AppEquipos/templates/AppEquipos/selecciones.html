@@ -1,0 +1,26 @@
+{% extends "AppEquipos/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">LISTADO DE TODAS LAS SELECCIONES</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+{% if selecciones%}
+<ul>
+    <h1>LISTADO DE SELECCIONES</h1>
+
+    {% for seleccion in selecciones %}
+    
+    <li>{{ seleccion.pais }} - {{ seleccion.copasGanadas }} </li>
+
+    {% endfor %}
+
+
+</ul>
+{% endif %}
+
+<h2>{{ mensaje }}</h2>
+<a class="btn btn-primary" href="{% url 'seleccionFormulario'  %}">Agregar Seleccion</a>
+{% endblock %}

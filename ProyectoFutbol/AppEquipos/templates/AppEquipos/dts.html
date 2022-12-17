@@ -1,0 +1,23 @@
+{% extends "AppEquipos/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">LISTADO DE TODOS LOS DTS</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+<ul>
+    <h1>LISTADO DE DTS</h1>
+
+    {% for dt in dts %}
+    
+    <li>{{ dt.nombre }} {{ dt.apellido }} </li>
+
+    {% endfor %}
+
+
+</ul>
+
+{% endblock %}

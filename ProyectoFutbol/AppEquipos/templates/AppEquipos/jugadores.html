@@ -1,0 +1,22 @@
+{% extends "AppEquipos/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">LISTADO DE TODOS LOS JUGADORES</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+<ul>
+    <h1>LISTADO DE JUGADORES</h1>
+
+    {% for jugador in jugadores %}
+    
+    <li>{{ jugador.nombre }} {{ jugador.apellido }} </li>
+
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
